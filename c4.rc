@@ -1,0 +1,163 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+1                       BITMAP                  "bmp1.bmp"
+102                     BITMAP                  "Bitmap_2.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+CONNECT4 MENU 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Save Game",                   11851
+        MENUITEM "Load Game",                   11850
+        MENUITEM "&Quit",                       102
+    END
+    POPUP "Command"
+    BEGIN
+        MENUITEM "&New Game",                   101
+        MENUITEM "Back \t<-",                   11845
+        MENUITEM "Forward\t->",                 11846
+        MENUITEM "&Play",                       108
+    END
+    POPUP "Options"
+    BEGIN
+        POPUP "Levels"
+        BEGIN
+            MENUITEM "Beginner",                    105
+            MENUITEM "Intermediate",                106
+            MENUITEM "Expert",                      107
+            MENUITEM "Master",                      111
+            MENUITEM "Infinite",                    11853
+            MENUITEM "Game Theoretic Values",       11849
+            MENUITEM "Search Win",                  11854
+        END
+        POPUP "Evaluation"
+        BEGIN
+            MENUITEM "Smart",                       12000
+            MENUITEM "Average",                     12001
+            MENUITEM "Dumb",                        12002
+        END
+        MENUITEM "2 Players",                   11852
+        MENUITEM "Randomize",                   11855
+    END
+    POPUP "Help"
+    BEGIN
+        MENUITEM "&Help",                       109
+        MENUITEM "4 in a row Homepage",         11847
+        MENUITEM "4 in a row Tutorial",         11848
+        MENUITEM "&About",                      110
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+C4ABOUT DIALOGEX 78, 43, 149, 204
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION
+CAPTION "About 4 in a row"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "OK",1,48,184,50,14,NOT WS_TABSTOP
+    LTEXT           "4 in a row for Windows v4.0\n\n(c) 2000-2006 Martin Fierz\n\n4 in a row would not exist in this form\nwithout...\n\n- Andri Schaufelbühl\n- Bernhard Seybold\n- Ed Gilbert\n- Lars Bremer\n- Uta Hermanns\n\n...Thank you!",IDC_STATIC,8,63,125,113
+    CONTROL         1,IDC_STATIC,"Static",SS_BITMAP,7,9,133,49
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+ICON3                   ICON                    "Icon_1.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+CONNECT4 ACCELERATORS 
+BEGIN
+    "N",            101,                    VIRTKEY, NOINVERT
+    "Q",            102,                    VIRTKEY, NOINVERT
+    "P",            108,                    VIRTKEY, NOINVERT
+    "H",            109,                    VIRTKEY, NOINVERT
+    "A",            110,                    VIRTKEY, NOINVERT
+    "B",            115,                    VIRTKEY, NOINVERT
+    VK_LEFT,        11845,                  VIRTKEY, NOINVERT
+    VK_RIGHT,       11846,                  VIRTKEY, NOINVERT
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
